@@ -8,6 +8,13 @@
 
   <!-- Css Link -->
   <link rel="stylesheet" href="style.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/momentum_logo_favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/momentum_logo_favicon_180x180.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/momentum_logo_favicon_180x180.png">
 </head>
 
 <body>
@@ -15,44 +22,43 @@
   <!-- Coming Soon Section -->
   <section class="container">
     <div class="image"></div>
-    <div class="logo-container">
-      <img src="images/momentum_logo.png" alt="MomentumAI Logo" class="momentum-logo">
-    </div>
-    <header>MomentumAI - Coming soon</header>
-    <p>
-      Implementing safe and effective AI. Soon within your company.
-    </p>
-    <!-- <p>
-      Our website is under construction. We're working hard to improve our
-      website and we'll ready to launch after.
-    </p> -->
-    <div class="time-content">
-      <div class="time days">
-        <span class="number"></span>
-        <span class="text">days</span>
+
+    <div class="hero animate__animated animate__bounceInDown">
+      <div class="logo-container">
+        <img src="images/momentum_logo_clean.svg" alt="MomentumAI Logo" class="momentum-logo">
       </div>
-      <div class="time hours">
-        <span class="number"></span>
-        <span class="text">hours</span>
+      <header>MomentumAI - Coming soon</header>
+      <p>
+        Implementing safe and effective AI. Soon within your company.
+      </p>
+      <div class="time-content">
+        <div class="time days">
+          <span class="number"></span>
+          <span class="text">days</span>
+        </div>
+        <div class="time hours">
+          <span class="number"></span>
+          <span class="text">hours</span>
+        </div>
+        <div class="time minutes">
+          <span class="number"></span>
+          <span class="text">minutes</span>
+        </div>
+        <div class="time seconds">
+          <span class="number"></span>
+          <span class="text">seconds</span>
+        </div>
       </div>
-      <div class="time minutes">
-        <span class="number"></span>
-        <span class="text">minutes</span>
-      </div>
-      <div class="time seconds">
-        <span class="number"></span>
-        <span class="text">seconds</span>
+
+      <div class="email-content">
+        <form id="signup-form" class="input-box">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Get early access</button>
+        </form>
       </div>
     </div>
 
-    <div class="email-content">
-      <form id="signup-form" class="input-box">
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <button type="submit">Get early access</button>
-      </form>
-    </div>
-
-    <div class="large-screenshot-container">
+    <div class="large-screenshot-container animate__animated animate__bounceInUp animate__delay-1s">
       <img src="images/Screenshot momentumchat.png" alt="MomentumAI Screenshot" class="large-screenshot">
     </div>
 

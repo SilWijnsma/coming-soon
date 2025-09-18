@@ -7,7 +7,8 @@ const seconds = document.querySelector(".seconds .number"),
 const now = new Date().getTime();
 const targetDate = now + (25 * 24 * 60 * 60 * 1000) + (10 * 60 * 60 * 1000) + (52 * 60 * 1000);
 
-const timeFunction = setInterval(() => {
+// Initialize countdown immediately so numbers are present for animation
+function updateCountdown() {
   // Get the current date and time
   const currentDate = new Date().getTime();
 
@@ -34,4 +35,8 @@ const timeFunction = setInterval(() => {
   hours.textContent =
     hoursRemaining < 10 ? `0${hoursRemaining}` : hoursRemaining;
   days.textContent = daysRemaining < 10 ? `0${daysRemaining}` : daysRemaining;
-}, 1000);
+}
+
+// Run countdown immediately and then every second
+updateCountdown();
+const timeFunction = setInterval(updateCountdown, 1000);
